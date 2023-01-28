@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/teal_700">
+
+
+    <TextView
+        android:id="@+id/game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TIC TAC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="33dp"
+        tools:ignore="MissingConstraints" />
+    <ImageView
+        android:id="@+id/grid"
+        android:layout_width="0dp"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/game"
+
+        app:srcCompat="@drawable/grid" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+
+        android:layout_width="0dp"
+        android:layout_height="420dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/grid"
+        app:layout_constraintEnd_toEndOf="@+id/grid"
+        app:layout_constraintStart_toStartOf="@+id/grid"
+        app:layout_constraintTop_toTopOf="@+id/grid">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:onClick="playerTap"
+                android:padding="20sp"
+                android:tag="0"
+                tools:ignore="OnClick" />
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:onClick="playerTap"
+                android:padding="20sp"
+                android:tag="1"
+                tools:ignore="OnClick" />
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:onClick="playerTap"
+                android:padding="20sp"
+                android:tag="2"
+                tools:ignore="OnClick" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:onClick="playerTap"
+                android:padding="20sp"
+                android:tag="3"
+                tools:ignore="OnClick" />
+
+            <ImageView
+                android:id="@+id/image4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:onClick="playerTap"
+                android:padding="20sp"
+                android:tag="4"
+                tools:ignore="OnClick" />
+
+            <ImageView
+                android:id="@+id/image5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:onClick="playerTap"
+                android:padding="20sp"
+                android:tag="5"
+                tools:ignore="OnClick" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image6"
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:layout_weight="1"
+
+                android:onClick="playerTap"
+                android:padding="20sp"
+                android:tag="6"
+                tools:ignore="OnClick" />
+
+            <ImageView
+                android:id="@+id/image7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:onClick="playerTap"
+                android:padding="20sp"
+                android:tag="7"
+                tools:ignore="OnClick" />
+
+            <ImageView
+                android:id="@+id/image8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:onClick="playerTap"
+                android:padding="20sp"
+                android:tag="8"
+                tools:ignore="OnClick" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15sp"
+        android:text="Play"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearlayout"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
